@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+input,
+button {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+}
+
+input#inputText {
+    resize: none;
+}
+
+button#encrypt,
+button#decrypt {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button#encrypt:hover,
+button#decrypt:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+button#toggle {
+    background-color: transparent;
+    border-color: transparent;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+button#toggle:hover {
+    color: #2980b9;
+}
+
+.attribution {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Add your original styles */
+
+.result {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+    min-height: 100px;
+    height: 100px;
+}
+
+/* Add the following new rules */
+
+button#copy {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 30px;
+    padding: 5px;
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+}
+
+button#copy:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+input[type="text"],
+.result {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
